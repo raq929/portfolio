@@ -58,13 +58,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 .span_1_of_12 {
     width: 5.986%;
 }
-nav {
-  float:right;
-}
-
-nav li {
-  display:inline;
-}
 
 /*Custom CSS*/
 /*Global styles*/
@@ -73,7 +66,36 @@ a {
   color: black;
 }
 
+/* Navbar */
+nav {
+  float:right;
+}
 
+nav li {
+  display:inline;
+}
+
+nav a {
+  display: inline-block;
+  padding: .5em .5em;
+  font-size: 1.25em;
+  color: black;
+  transition: background 2s;
+}
+
+nav a:hover {
+  background: #6B889D;
+}
+
+header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+  background-color: rgba(108, 150, 157, 0.61);
+  height: 2.5em;
+  border-bottom: 1px solid #878d8f;
+}
 
 
 /*Rotating words*/
@@ -186,32 +208,5 @@ a {
   80% { opacity: 0; }
     100% { opacity: 0; }
 
-/* Navbar */
-nav {
-  float:right;
-}
 
-nav li {
-  display:inline;
-}
-
-nav a {
-  display: inline-block;
-  padding: 26px 10px;
-  transition: background 2s;
-}
-
-nav a:hover {
-  background: #d2ccfc;
-}
-
-header {
-  position:fixed;
-  top: 0;
-  left: 0;
-  width:100%;
-  background-color: rgba(98, 119, 102, 0.61);
-  height: 68px;
-  border-bottom: 1px solid #878d8f;
-}
 
