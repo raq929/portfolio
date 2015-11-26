@@ -84,7 +84,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #6B889D;
+  background: #D7B9D8;
 }
 
 header {
@@ -92,25 +92,37 @@ header {
   top: 0;
   left: 0;
   width:100%;
-  background-color: rgba(108, 150, 157, 0.61);
+  background-color: rgba(255, 255, 255, 0.71);
   height: 2.5em;
   border-bottom: 1px solid #878d8f;
 }
 
 
 /*Rotating words*/
+#banner {
+  background-image: url("./images/green.jpg");
+  background-size: cover;
+  background-repeat: none;
+  background-position: center center;
+  height: 400px;
+  padding-top: 90px;
+  width: 100%;
+}
+
 .rw-wrapper{
-  width: 80%;
   position: relative;
-  margin: 110px auto 0 auto;
+  margin: 110px auto 0 110px;
   font-family: 'Bree Serif';
   padding: 10px;
+  display:inline-block;
+  background-color: rgba(255, 255, 255, .75);
 }
 
 .rw-sentence{
   margin: 0;
   text-align: left;
   text-shadow: 1px 1px 1px rgba(255,255,255,0.8);
+
 }
 
 .rw-sentence span{
@@ -207,6 +219,16 @@ header {
   20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
   80% { opacity: 0; }
     100% { opacity: 0; }
-
-
+}
+/* Mobile Breakpoint*/
+@media screen and (max-width: 650px) {
+    .column, .column:first-of-type {
+        margin: 1em 5%;
+        width: 90%;
+    }
+    .rw-wrapper {
+      margin: 110px auto 0 auto;
+      
+    }
+}
 
