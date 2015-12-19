@@ -1,64 +1,60 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
-/* Grid System */
-.row {
-  clear: both;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 1170px;
-}
-.row:after {
-  content: "";
-  clear: both;
-  height: 0;
-  visibility: hidden;
-  display: block;
-}
-.column {
-  float: left;
-  margin: 0 0 0 2.56%;
-  min-height: 1px;
-}
-.column:first-of-type { 
-  margin-left: 0;
-}
-.span_12_of_12 {
-  width: 100%;
-}
-.span_11_of_12 {
-    width: 91.45%;
-}
-.span_10_of_12 {
-    width: 82.90%;
-}
-.span_9_of_12 {
-    width: 74.36%;
-}
-.span_8_of_12 {
-    width: 65.81%;
-}
-.span_7_of_12 {
-    width: 57.26%;
-}
-.span_6_of_12 {
-    width: 48.72%;
-}
-.span_5_of_12 {
-    width: 40.17%;
-}
-.span_4_of_12 {
-    width: 31.62%;
-}
-.span_3_of_12 {
-    width: 23.08%;
-}
-.span_2_of_12 {
-    width: 14.53%;
-}
-.span_1_of_12 {
-    width: 5.986%;
+
+/*Masonry Layout*/
+
+.wrapper {
+    width: 95%;
+    margin: 3em auto;
 }
 
+.masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -moz-column-gap: 1em;
+    -webkit-column-gap: 1em;
+    column-gap: 1em;
+}
+.brick {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 1.5em 0;
+    padding: 1em;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-shadow: 2px 2px 4px 0 #ccc;
+}
+.brick img {
+    width: 100%;
+}
+
+#sacredHarp {
+  
+}
+
+.logo {
+  max-height: 40px;
+  max-width: 40px;
+  float: right;
+}
+
+@media only screen and (min-width: 400px) {
+    .masonry {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .masonry {
+        -moz-column-count: 3;
+        -webkit-column-count: 3;
+        column-count: 3;
+    }
+}
 /*Custom CSS*/
 /*Global styles*/
 a {
@@ -79,6 +75,10 @@ img {
 h3 {
   font-size: 3em;
   margin-bottom: .5em;
+}
+
+h4 {
+  font-size: 2em;
 }
 
 /* Navbar */
@@ -237,25 +237,4 @@ header {
 }
 
 
-/* Mobile Breakpoint*/
-@media screen and (max-width: 650px) {
-    .column, .column:first-of-type {
-        margin: 1em 5%;
-        width: 90%;
-    }
-    .rw-wrapper {
-      margin: 110px auto 0 auto;
-      
-    }
-}
-
-/* Portfolio */
-#portfolio h3 {
-  text-align: center;
-  margin: 1em auto;
-}
-
-.second-row {
-  margin-top: 2em;
-}
 
