@@ -99,7 +99,7 @@ nav a {
 }
 
 nav a:hover {
-  background: #D7B9D8;
+  background: #9CCE48;
 }
 
 header {
@@ -110,6 +110,33 @@ header {
   background-color: rgba(255, 255, 255, 0.71);
   height: 2.5em;
   border-bottom: 1px solid #878d8f;
+}
+
+/*Footer*/
+footer {
+  background-color: #9CCE48;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  border-top: 1px solid grey;
+
+}
+
+footer img {
+  border: none;
+  border-radius: 0%;
+  fill: black;
+}
+
+footer h4 {
+  font-family: 'Lato'
+}
+
+footer li {
+  display: inline-block;
+  padding: 10px;
+  height: 44px;
+  width: 44px;
 }
 
 
