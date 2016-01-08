@@ -2,10 +2,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 
 #about {
-  display:flex;
-  display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
-  display: -ms-flexbox;  /* TWEENER - IE 10 */
-  display: -webkit-flex;
   text-align: left;
   padding: 2em 0;
   margin: 2em auto;
@@ -17,19 +13,14 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   font-size: 1.4em;
   font-family: 'Rokkitt', serif;
   font-weight: 400;
-
-  
 }
 
 #about h2 {
-  float: left;
+  text-align: center;
   font-size: 2em;
   margin-right: .5em;
   font-family: 'Bad Script', serif;
-  font-weight: 700;
-  display:inline-block;
   white-space: nowrap;
-  margin-top: .2em
 
 }
 
@@ -292,6 +283,18 @@ footer li {
 }
 
 @media only screen and (min-width: 770px) {
+  #about {
+    display:flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex;
+  }
+
+  #about h2 {
+    float: left;
+    margin-top: .2em
+  }
+
   .masonry {
       -moz-column-count: 2;
       -webkit-column-count: 2;
@@ -309,9 +312,21 @@ footer li {
 
 
 @media only screen and (min-width: 1090px) {
-    .masonry {
-        -moz-column-count: 3;
-        -webkit-column-count: 3;
-        column-count: 3;
-    }
+  #about{
+    display:flex;
+    display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+    display: -ms-flexbox;  /* TWEENER - IE 10 */
+    display: -webkit-flex;
+  }
+
+  #about h2 {
+    float: left;
+    margin-top: .2em
+  }
+
+  .masonry {
+    -moz-column-count: 3;
+    -webkit-column-count: 3;
+    column-count: 3;
+  }
 }
