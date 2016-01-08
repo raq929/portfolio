@@ -169,12 +169,12 @@ footer li {
 .rw-wrapper{
   font-size: 1em
   position: relative;
-  margin: 110px auto 0 15px;
+  margin: 110px auto 0 10px;
   font-family: 'Rokkitt';
   padding: 5px;
   display:inline-block;
   background-color: rgba(255, 255, 255, .75);
-  width: 345px;
+  width: 335px;
   height: 12em;
   word-wrap: normal;
   border-radius: 5px;
@@ -287,6 +287,16 @@ footer li {
   20% { opacity: 0; -webkit-transform: translateY(30px); transform: translateY(30px); }
   80% { opacity: 0; }
     100% { opacity: 0; }
+}
+
+@media only screen and (min-width: 412px) {
+  .rw-wrapper{
+    font-size: 1em;
+    position: relative;
+    margin: 110px auto 0 15px;
+    width: 355px;
+    height: 10em;
+  }
 }
 
 @media only screen and (min-width: 770px) {
