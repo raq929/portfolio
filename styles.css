@@ -1,8 +1,15 @@
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
 
+ul {
+  -webkit-margin-before: 0em;
+  -webkit-margin-after: 0em;
+  -webkit-margin-start: 0px;
+  -webkit-margin-end: 0px;
+  -webkit-padding-start: 0px;
+}
 
-#about {
-  text-align: left;
+
+#about, #skills {
   padding: 2em 0;
   margin: 2em auto;
   background-color: #9CCE48;
@@ -10,17 +17,51 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
   width: 80vw;
   padding: 30px;
   border-radius: 7px;
-  font-size: 1.4em;
   font-family: 'Rokkitt', serif;
   font-weight: 400;
 }
 
+#about {
+  font-size: 1.4em;
+  text-align: left;
+}
+
 #about h2 {
-  text-align: center;
+  text-align: left;
   font-size: 2em;
   margin-right: .5em;
   font-family: 'Bad Script', serif;
   white-space: nowrap;
+  margin-bottom: .2em;
+}
+
+#skills div{
+  width: 75%;
+  display: inline;
+}
+
+#skills ul {
+  font-size: 1.4em;
+  -moz-column-count: 2;
+  -moz-column-gap: 1em;
+  -webkit-column-count: 2;
+  -webkit-column-gap: 1em;
+  column-count: 2;
+  column-gap: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+#skills h2 {
+  
+  text-align: left;
+  width: 200px;
+  font-size: 3em;
+  margin: .2em 0;
+  padding: 0;
+  font-family: 'Bad Script', serif;
+  white-space: nowrap;
+  display: block;
 
 }
 
@@ -297,10 +338,12 @@ footer li {
     width: 355px;
     height: 10em;
   }
+
+
 }
 
-@media only screen and (min-width: 770px) {
-  #about {
+@media only screen and (min-width: 765px) {
+  #about, #skills {
     display:flex;
     display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
     display: -ms-flexbox;  /* TWEENER - IE 10 */
@@ -308,9 +351,20 @@ footer li {
   }
 
   #about h2 {
-    float: left;
-    margin-top: .2em
+    float: right;
+    margin-top: .2em;
   }
+
+  #skills ul {
+   font-size: 1.5em;
+    -moz-column-count: 3;
+    -moz-column-gap: .5em;
+    -webkit-column-count: 3;
+    -webkit-column-gap: .5em;
+    column-count: 3;
+    column-gap: .5em;
+
+}
 
   .masonry {
       -moz-column-count: 2;
@@ -339,6 +393,24 @@ footer li {
   #about h2 {
     float: left;
     margin-top: .2em
+  }
+
+
+  #skills ul {
+    font-size: 1.8em;
+    -moz-column-count: 5;
+    -moz-column-gap: 3em;
+    -webkit-column-count: 5;
+    -webkit-column-gap: 3em;
+    column-count: 5;
+    column-gap: 3em;
+  }
+
+  #skills h2 {
+    font-size: 4em;
+    margin-top: .2em;
+    float: right;
+    display: inline;
   }
 
   .masonry {
