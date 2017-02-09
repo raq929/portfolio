@@ -401,10 +401,11 @@ footer li {
     -webkit-column-count: 5;
     -webkit-column-gap: 3em;
     column-count: 5;
-    column-gap: 3em;
+    column-gap: 2.5em;
   }
 
   #skills h2 {
+    margin-left: .7em;
     font-size: 3em;
     margin-top: .2em;
     float: right;
